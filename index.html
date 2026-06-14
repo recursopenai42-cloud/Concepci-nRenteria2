@@ -18,7 +18,6 @@
             line-height: 1.6;
         }
 
-        /* Header con logo UDES */
         .header {
             background: linear-gradient(135deg, #003366 0%, #0055aa 100%);
             color: white;
@@ -65,7 +64,6 @@
             opacity: 0.9;
         }
 
-        /* Navegación */
         .nav {
             background-color: #002244;
             padding: 0.8rem 2rem;
@@ -91,7 +89,6 @@
             color: #002244;
         }
 
-        /* Dropdown */
         .dropdown {
             position: relative;
             display: inline-block;
@@ -124,7 +121,6 @@
             display: block;
         }
 
-        /* Contenido principal */
         .container {
             max-width: 1300px;
             margin: 0 auto;
@@ -172,6 +168,29 @@
             margin-bottom: 1.8rem;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
             border: 1px solid #e0e7f0;
+        }
+
+        .modelo-card {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .modelo-imagen {
+            flex: 0 0 80px;
+            text-align: center;
+        }
+
+        .modelo-imagen img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        .modelo-contenido {
+            flex: 1;
         }
 
         .red-card {
@@ -255,6 +274,10 @@
                 background-color: #003366;
                 margin-top: 0.5rem;
             }
+            .modelo-card {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
@@ -294,7 +317,7 @@
     <div id="inicio" class="page active-page">
         <div class="card" style="text-align: center;">
             <h1>📘 Sitio web: modelos de evaluación de recursos educativos digitales</h1>
-            <p style="font-size:1.2rem; margin: 1rem 0;"><strong>Estudiante:</strong> Concepción Renteria Renteria [43652942]</p>
+            <p style="font-size:1.2rem; margin: 1rem 0;"><strong>Estudiante:</strong> Concepción Renteria Renteria</p>
             <p><strong>Profesor Consultor:</strong> Eduardo Méndez Bonilla</p>
             <p><strong>Módulo:</strong> Evaluación de Recursos Educativos Digitales</p>
             <p><strong>Universidad de Santander (UDES)</strong></p>
@@ -305,32 +328,110 @@
         </div>
     </div>
 
-    <!-- Página Modelos de evaluación -->
+    <!-- Página Modelos de evaluación (desarrollados ampliamente) -->
     <div id="modelos" class="page">
         <h1>📋 Modelos de evaluación de recursos educativos digitales</h1>
+        
+        <!-- CODA -->
         <div class="card">
-            <h2>🔹 1. CODA (Calidad de Objetos de Aprendizaje)</h2>
-            <p>Combina criterios pedagógicos y tecnológicos. Evalúa: objetivos, contenidos, reflexión, interactividad, motivación, diseño, usabilidad, accesibilidad, reusabilidad e interoperabilidad. Escala 1 a 5.</p>
+            <div class="modelo-card">
+                <div class="modelo-imagen">
+                    <img src="icono-coda.png" alt="Icono CODA" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3135/3135715.png'">
+                </div>
+                <div class="modelo-contenido">
+                    <h2>🔹 1. CODA (Calidad de Objetos de Aprendizaje)</h2>
+                    <p><strong>Descripción ampliada:</strong> CODA es una herramienta desarrollada por la Universidad Complutense de Madrid que permite evaluar la calidad de objetos de aprendizaje universitarios, pero que puede adaptarse a cualquier nivel educativo. Su principal fortaleza es que <strong>combina criterios pedagógicos y tecnológicos</strong> en un mismo instrumento.</p>
+                    <p><strong>Criterios de evaluación:</strong> Se organiza en 10 criterios: 5 didácticos (objetivos y coherencia, calidad de contenidos, capacidad de generar reflexión, interactividad y adaptabilidad, motivación) y 5 tecnológicos (formato y diseño, usabilidad, accesibilidad, reusabilidad, interoperabilidad).</p>
+                    <p><strong>Métrica:</strong> Escala de 1 a 5 (1=mínimo, 5=máximo), con opción "No Aplica".</p>
+                    <p><strong>Metodología:</strong> Evaluación por pares o autoevaluación mediante un formulario detallado. Incluye una guía de buenas prácticas para orientar la puntuación.</p>
+                    <p><strong>Ventaja para el aula:</strong> Permite al docente de primaria valorar si un recurso digital realmente aporta al aprendizaje de matemáticas, considerando tanto el contenido pedagógico como la facilidad de uso técnico.</p>
+                </div>
+            </div>
         </div>
+
+        <!-- LORI -->
         <div class="card">
-            <h2>🔹 2. LORI (Learning Object Review Instrument)</h2>
-            <p>Evalúa calidad del contenido, alineación con objetivos, retroalimentación, motivación, diseño, interacción, accesibilidad, reusabilidad y estándares. Escala 1 a 5.</p>
+            <div class="modelo-card">
+                <div class="modelo-imagen">
+                    <img src="icono-lori.png" alt="Icono LORI" onerror="this.src='https://cdn-icons-png.flaticon.com/512/1995/1995572.png'">
+                </div>
+                <div class="modelo-contenido">
+                    <h2>🔹 2. LORI (Learning Object Review Instrument)</h2>
+                    <p><strong>Descripción ampliada:</strong> LORI es un instrumento desarrollado por el E-Learning Research and Assessment Network (eLera). Es uno de los modelos más utilizados internacionalmente para la evaluación colaborativa de objetos de aprendizaje.</p>
+                    <p><strong>Criterios de evaluación:</strong> Evalúa 9 dimensiones: calidad del contenido, alineación con los objetivos de aprendizaje, retroalimentación y adaptabilidad, motivación, diseño de presentación, interacción y usabilidad, accesibilidad, reusabilidad y cumplimiento de estándares.</p>
+                    <p><strong>Métrica:</strong> Escala de 1 a 5, con espacio para comentarios cualitativos por cada criterio.</p>
+                    <p><strong>Metodología:</strong> Revisión colaborativa por pares. Un grupo de docentes evalúa el mismo recurso y luego consensúa las puntuaciones, lo que aumenta la confiabilidad del resultado.</p>
+                    <p><strong>Ventaja para el aula:</strong> Ideal para que varios docentes de matemáticas de primaria comparen diferentes recursos y decidan cuál usar en sus clases.</p>
+                </div>
+            </div>
         </div>
+
+        <!-- MERLOT -->
         <div class="card">
-            <h2>🔹 3. MERLOT Peer Review</h2>
-            <p>Modelo práctico centrado en: calidad del contenido, efectividad como herramienta de enseñanza y facilidad de uso. Escala 1 a 5.</p>
+            <div class="modelo-card">
+                <div class="modelo-imagen">
+                    <img src="icono-merlot.png" alt="Icono MERLOT" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3064/3064197.png'">
+                </div>
+                <div class="modelo-contenido">
+                    <h2>🔹 3. MERLOT Peer Review</h2>
+                    <p><strong>Descripción ampliada:</strong> MERLOT (Multimedia Educational Resource for Learning and Online Teaching) es un modelo de revisión por pares desarrollado por California State University. Se enfoca en la evaluación práctica de materiales educativos digitales desde la perspectiva del docente usuario.</p>
+                    <p><strong>Criterios de evaluación:</strong> Se centra en tres aspectos fundamentales: calidad del contenido (precisión, actualización, relevancia), efectividad potencial como herramienta de enseñanza y aprendizaje (qué tanto ayuda al logro de objetivos), y facilidad de uso (qué tan intuitivo es para docentes y estudiantes).</p>
+                    <p><strong>Métrica:</strong> Escala de 1 a 5 o sistema de estrellas, acompañado de comentarios cualitativos obligatorios.</p>
+                    <p><strong>Metodología:</strong> Evaluación realizada por pares docentes que ya han usado el recurso en sus clases. Incluye preguntas abiertas sobre fortalezas, debilidades y sugerencias de mejora.</p>
+                    <p><strong>Ventaja para el aula:</strong> Es el modelo más práctico y rápido para que un docente de primaria decida si un recurso de matemáticas vale la pena o no.</p>
+                </div>
+            </div>
         </div>
+
+        <!-- UNE 71362 -->
         <div class="card">
-            <h2>🔹 4. UNE 71362</h2>
-            <p>Marco para valorar materiales educativos digitales: descripción didáctica, contenidos, navegación, accesibilidad, interactividad, portabilidad, etc.</p>
+            <div class="modelo-card">
+                <div class="modelo-imagen">
+                    <img src="icono-une.png" alt="Icono UNE" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2917/2917995.png'">
+                </div>
+                <div class="modelo-contenido">
+                    <h2>🔹 4. UNE 71362</h2>
+                    <p><strong>Descripción ampliada:</strong> La norma UNE 71362 es un estándar español que establece un modelo de calidad para materiales educativos digitales. Fue desarrollada por AENOR (Asociación Española de Normalización) y es de las más completas en el ámbito iberoamericano.</p>
+                    <p><strong>Criterios de evaluación:</strong> Incluye 15 criterios agrupados en: descripción didáctica (objetivos, destinatarios, secuenciación), calidad de los contenidos (precisión, actualización, adecuación), capacidad de generar aprendizaje, adaptabilidad, interactividad, motivación, formato y diseño, reusabilidad, portabilidad, robustez, navegación, operabilidad, accesibilidad audiovisual, accesibilidad textual y cumplimiento de condiciones técnicas.</p>
+                    <p><strong>Métrica:</strong> Utiliza un sistema de indicadores que pueden valorarse cuantitativa y cualitativamente.</p>
+                    <p><strong>Metodología:</strong> Revisión sistemática del recurso mediante una lista de verificación detallada. Es aplicable por expertos o docentes capacitados.</p>
+                    <p><strong>Ventaja para el aula:</strong> Aunque es extenso, proporciona el análisis más completo. Ideal para instituciones que quieren certificar la calidad de sus recursos educativos digitales.</p>
+                </div>
+            </div>
         </div>
+
+        <!-- EVALUAREED -->
         <div class="card">
-            <h2>🔹 5. EVALUAREED</h2>
-            <p>Evalúa recursos electrónicos en nueve dimensiones: contenido, objetivos, feedback, usabilidad, motivación, accesibilidad, requerimientos técnicos, propiedad intelectual y efectividad del aprendizaje.</p>
+            <div class="modelo-card">
+                <div class="modelo-imagen">
+                    <img src="icono-evaluareed.png" alt="Icono EVALUAREED" onerror="this.src='https://cdn-icons-png.flaticon.com/512/4781/4781825.png'">
+                </div>
+                <div class="modelo-contenido">
+                    <h2>🔹 5. EVALUAREED</h2>
+                    <p><strong>Descripción ampliada:</strong> EVALUAREED es una herramienta española desarrollada por la Universidad Complutense de Madrid, financiada por el Ministerio de Ciencia e Innovación. Combina evaluación cualitativa (juicio de experto) con evaluación cuantitativa (sonda automática).</p>
+                    <p><strong>Criterios de evaluación:</strong> Se organiza en 9 dimensiones: calidad del contenido (rigor, integridad, objetividad), objetivos y metas de aprendizaje, feedback o retroalimentación, usabilidad (eficacia, eficiencia, satisfacción), motivación, accesibilidad (W3C, WCAG), requerimientos técnicos (hardware, software), propiedad intelectual (licencias, derechos de autor) y efectividad del recurso para el aprendizaje.</p>
+                    <p><strong>Métrica:</strong> Combina checklist con escala valorativa y análisis automatizado mediante software.</p>
+                    <p><strong>Metodología:</strong> El evaluador responde un cuestionario en línea que genera automáticamente un informe con fortalezas, debilidades y recomendaciones de mejora.</p>
+                    <p><strong>Ventaja para el aula:</strong> Es muy útil para docentes que quieren evaluar sus propios recursos digitales y obtener retroalimentación inmediata y estructurada.</p>
+                </div>
+            </div>
         </div>
+
+        <!-- Reeves -->
         <div class="card">
-            <h2>🔹 6. Reeves (Dimensiones pedagógicas)</h2>
-            <p>Enfoque en epistemología, filosofía pedagógica, rol del docente, control del estudiante, aprendizaje cooperativo, sensibilidad cultural, etc.</p>
+            <div class="modelo-card">
+                <div class="modelo-imagen">
+                    <img src="icono-reeves.png" alt="Icono Reeves" onerror="this.src='https://cdn-icons-png.flaticon.com/512/2964/2964513.png'">
+                </div>
+                <div class="modelo-contenido">
+                    <h2>🔹 6. Reeves (Dimensiones pedagógicas)</h2>
+                    <p><strong>Descripción ampliada:</strong> Thomas C. Reeves, profesor de la Universidad de Georgia, propuso este modelo centrado en el <strong>enfoque pedagógico subyacente</strong> a los recursos educativos digitales, más allá de sus aspectos técnicos o de contenido.</p>
+                    <p><strong>Criterios de evaluación:</strong> Incluye 14 dimensiones pedagógicas: enfoque epistemológico (objetivista vs constructivista), filosofía pedagógica (instructivista vs constructivista), psicología subyacente (conductista vs cognitivista), orientación a metas (concretas vs amplias), valor experiencial (abstracto vs concreto), rol del docente (didáctico vs facilitador), flexibilidad del programa (inalterable vs fácilmente modificable), valor del error (aprendizaje libre de errores vs aprender desde la experiencia), motivación (extrínseca vs intrínseca), adaptación a diferencias individuales, control del estudiante (inexistente vs total), actividad del usuario (predeterminada vs generativa), aprendizaje cooperativo y sensibilidad cultural.</p>
+                    <p><strong>Métrica:</strong> Cada dimensión se evalúa como un continuo entre dos polos opuestos, permitiendo ubicar el recurso en el punto medio deseado según el contexto.</p>
+                    <p><strong>Metodología:</strong> Análisis reflexivo por parte del docente, respondiendo preguntas sobre qué tipo de aprendizaje promueve el recurso, qué rol asume el estudiante, etc.</p>
+                    <p><strong>Ventaja para el aula:</strong> Este modelo ayuda al docente a preguntarse no solo "¿el recurso funciona?" sino "¿qué tipo de aprendizaje promueve?". Es fundamental para alinear el recurso con el enfoque pedagógico de la institución.</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -342,9 +443,9 @@
             <table>
                 <thead><tr><th>Modelo</th><th>Pros</th><th>Contras</th><th>Recomendación</th></tr></thead>
                 <tbody>
-                    <tr><td><strong>CODA</strong></td><td>Equilibrio pedagógico-tecnológico, completo</td><td>Puede ser extenso</td><td>Ideal para recursos centrales</td></tr>
-                    <tr><td><strong>LORI</strong></td><td>Claro, fácil comparación</td><td>Depende del criterio del evaluador</td><td>Comparar varios RED similares</td></tr>
-                    <tr><td><strong>MERLOT</strong></td><td>Sencillo, rápido, práctico</td><td>Superficial en accesibilidad</td><td>Primera criba y evaluación con estudiantes</td></tr>
+                    <tr><td><strong>CODA</strong></td><td>Equilibrio pedagógico-tecnológico, completo, evalúa accesibilidad y reusabilidad</td><td>Puede ser extenso para evaluaciones rápidas</td><td>Ideal para recursos centrales o proyectos de aula</td></tr>
+                    <tr><td><strong>LORI</strong></td><td>Claro, fácil comparación, reconocido internacionalmente</td><td>Depende del criterio del evaluador</td><td>Comparar varios RED similares</td></tr>
+                    <tr><td><strong>MERLOT</strong></td><td>Sencillo, rápido, práctico, útil para docentes</td><td>Superficial en accesibilidad e interoperabilidad</td><td>Primera criba y evaluación con estudiantes</td></tr>
                 </tbody>
             </table>
             <p><strong>Modelo más pertinente para adaptar:</strong> CODA, incluyendo criterio de <strong>conectividad y pertinencia curricular para matemáticas de 4°.</strong></p>
@@ -360,12 +461,11 @@
     <div id="recursos" class="page">
         <h1>📁 Recursos Educativos Digitales seleccionados (Matemáticas - Grado 4°)</h1>
         
-        <!-- RED 1: Tablas de multiplicar - Mundo Primaria -->
         <div class="card red-card">
             <h2>🔢 RED 1: Aprende las tablas de multiplicar</h2>
             <div class="red-image">
                 <img src="captura-tablas.png" alt="Captura del juego Tablas de multiplicar - Mundo Primaria" onerror="this.src='https://www.mundoprimaria.com/wp-content/themes/mundoprimaria/images/logo-mundoprimaria.png'">
-                <p><em>Imagen del recurso educativo "Tablas de multiplicar"</em></p>
+                <p><em>Imagen del recurso educativo "Tablas de multiplicar" - Mundo Primaria</em></p>
             </div>
             <table>
                 <tr><th width="30%">Campo</th><th>Información</th></tr>
@@ -375,19 +475,18 @@
                 <tr><td><strong>Autor</strong></td><td>Mundo Primaria</td></tr>
                 <tr><td><strong>Repositorio/Plataforma</strong></td><td>Mundo Primaria</td></tr>
                 <tr><td><strong>Enlace al RED</strong></td><td><a href="https://www.mundoprimaria.com/juegos-matematicas/juego-tablas-multiplicar" target="_blank">https://www.mundoprimaria.com/juegos-matematicas/juego-tablas-multiplicar</a></td></tr>
-                <tr><td><strong>Descripción</strong></td><td>Juego interactivo que permite practicar las tablas de multiplicar del 1 al 10. Incluye diferentes niveles de dificultad, temporizador y sistema de puntuación. El estudiante debe seleccionar la respuesta correcta entre varias opciones.</td></tr>
-                <tr><td><strong>Características</strong></td><td>Interfaz colorida, gamificada, retroalimentación inmediata, progresión por niveles, gratis sin registro.</td></tr>
-                <tr><td><strong>Limitaciones</strong></td><td>Requiere conexión a Internet. No tiene adaptación para estudiantes con discapacidad visual. Algunas publicidades pueden distraer.</td></tr>
-                <tr><td><strong>Estándares</strong></td><td>Usabilidad alta, motivación alta, accesibilidad básica limitada.</td></tr>
+                <tr><td><strong>Descripción</strong></td><td>Juego interactivo que permite practicar las tablas de multiplicar del 1 al 10. Incluye diferentes niveles de dificultad, temporizador y sistema de puntuación. El estudiante debe seleccionar la respuesta correcta entre varias opciones. Ideal para que los niños de 4° de primaria automaticen las tablas de multiplicar de forma lúdica.</td></tr>
+                <tr><td><strong>Características</strong></td><td>Interfaz colorida, gamificada, retroalimentación inmediata, progresión por niveles, gratis sin registro, funciona en computador y tablet.</td></tr>
+                <tr><td><strong>Limitaciones</strong></td><td>Requiere conexión a Internet. No tiene adaptación para estudiantes con discapacidad visual. Algunas publicidades pueden distraer a los niños.</td></tr>
+                <tr><td><strong>Estándares</strong></td><td>Usabilidad alta, motivación alta, accesibilidad básica limitada. Alineado con los estándares de matemáticas del MEN para grado 4° en pensamiento numérico.</td></tr>
             </table>
         </div>
 
-        <!-- RED 2: Fracciones equivalentes - Árbol ABC -->
         <div class="card red-card">
             <h2>🍕 RED 2: Fracciones equivalentes</h2>
             <div class="red-image">
                 <img src="captura-fracciones.png" alt="Captura del recurso Fracciones equivalentes - Árbol ABC" onerror="this.src='https://arbolabc.com/sites/default/files/arbolabc_logo.png'">
-                <p><em>Imagen del recurso educativo "Fracciones equivalentes"</em></p>
+                <p><em>Imagen del recurso educativo "Fracciones equivalentes" - Árbol ABC</em></p>
             </div>
             <table>
                 <tr><th width="30%">Campo</th><th>Información</th></tr>
@@ -397,10 +496,10 @@
                 <tr><td><strong>Autor</strong></td><td>Árbol ABC</td></tr>
                 <tr><td><strong>Repositorio/Plataforma</strong></td><td>Árbol ABC</td></tr>
                 <tr><td><strong>Enlace al RED</strong></td><td><a href="https://arbolabc.com/juegos-de-fracciones/fracciones-equivalentes" target="_blank">https://arbolabc.com/juegos-de-fracciones/fracciones-equivalentes</a></td></tr>
-                <tr><td><strong>Descripción</strong></td><td>Recurso interactivo que utiliza representaciones visuales (círculos, rectángulos y pizzas) para explicar el concepto de fracciones equivalentes. El estudiante debe emparejar fracciones que representan la misma cantidad.</td></tr>
-                <tr><td><strong>Características</strong></td><td>Enfoque visual y concreto, ideal para comprensión inicial, ejercicios progresivos, feedback inmediato.</td></tr>
-                <tr><td><strong>Limitaciones</strong></td><td>Requiere conexión a Internet. Algunas actividades pueden ser repetitivas. No todos los ejercicios tienen sonido o instrucciones en audio.</td></tr>
-                <tr><td><strong>Estándares</strong></td><td>Buena usabilidad, excelente representación visual, accesibilidad auditiva limitada.</td></tr>
+                <tr><td><strong>Descripción</strong></td><td>Recurso interactivo que utiliza representaciones visuales (círculos, rectángulos y pizzas) para explicar el concepto de fracciones equivalentes. El estudiante debe emparejar fracciones que representan la misma cantidad. Perfecto para que los niños de 4° comprendan visualmente que 1/2 = 2/4 = 4/8.</td></tr>
+                <tr><td><strong>Características</strong></td><td>Enfoque visual y concreto, ideal para comprensión inicial de fracciones, ejercicios progresivos, feedback inmediato, diseño amigable para niños.</td></tr>
+                <tr><td><strong>Limitaciones</strong></td><td>Requiere conexión a Internet. Algunas actividades pueden ser repetitivas. No todos los ejercicios tienen instrucciones en audio para niños con dificultades de lectura.</td></tr>
+                <tr><td><strong>Estándares</strong></td><td>Buena usabilidad, excelente representación visual, alineado con los estándares de matemáticas del MEN para grado 4° en pensamiento métrico y sistemas de medidas.</td></tr>
             </table>
         </div>
     </div>
@@ -431,9 +530,9 @@
     <div id="aplicacion" class="page">
         <h1>📊 Aplicación del modelo CODA adaptado a los RED de Matemáticas</h1>
         <div class="card">
-            <h2>📈 Modelo CODA adaptado (11 criterios + conectividad)</h2>
+            <h2>📈 Modelo CODA adaptado (11 criterios)</h2>
             <table>
-                <thead><tr><th>Criterio</th><th>Tablas de multiplicar (Mundo Primaria)</th><th>Fracciones equivalentes (Árbol ABC)</th></tr></thead>
+                <thead><tr><th>Criterio</th><th>Tablas de multiplicar</th><th>Fracciones equivalentes</th></tr></thead>
                 <tbody>
                     <tr><td>1. Objetivos y coherencia didáctica</td><td>5</td><td>5</td></tr>
                     <tr><td>2. Calidad de los contenidos</td><td>5</td><td>5</td></tr>
@@ -445,62 +544,5 @@
                     <tr><td>8. Accesibilidad</td><td>3</td><td>3</td></tr>
                     <tr><td>9. Reusabilidad</td><td>4</td><td>4</td></tr>
                     <tr><td>10. Interoperabilidad</td><td>4</td><td>4</td></tr>
-                    <tr><td><strong>11. Viabilidad en baja conectividad</strong></td><td>4 (puede complementarse con tarjetas físicas)</td><td>4 (puede complementarse con círculos de papel)</td></tr>
-                    <tr><td><strong>Total /55</strong></td><td><strong>49</strong></td><td><strong>49</strong></td></tr>
-                </tbody>
-            </table>
-            <p><strong>Conclusión:</strong> Ambos recursos son altamente pertinentes para enseñar matemáticas en 4° de primaria. El modelo CODA adaptado permite integrar la evaluación tecnológica con estrategias pedagógicas para contextos de baja conectividad.</p>
-        </div>
-        <div class="card">
-            <h2>📋 Resultados LORI y MERLOT (resumen)</h2>
-            <p><strong>LORI:</strong> Ambos recursos obtienen ~4.5/5. Destacan en motivación y calidad de contenido.</p>
-            <p><strong>MERLOT:</strong> Ambos obtienen 4.7/5 en efectividad para la enseñanza de matemáticas en primaria.</p>
-        </div>
-    </div>
-
-    <!-- Página 5: Referencias -->
-    <div id="referencias" class="page">
-        <h1>📚 Referencias</h1>
-        <div class="card">
-            <ul>
-                <li>Fernández-Pampillón Cesteros, A. M., Domínguez Romero, E., & Armas Ranero, I. (2012). <em>CODA V 1.1</em>. Universidad Complutense de Madrid.</li>
-                <li>Nesbit, J., Belfer, K., & Leacock, T. (2009). <em>Learning Object Review Instrument (LORI)</em>.</li>
-                <li>Mundo Primaria. (s.f.). <em>Juego de tablas de multiplicar</em>. Recuperado de https://www.mundoprimaria.com</li>
-                <li>Árbol ABC. (s.f.). <em>Fracciones equivalentes</em>. Recuperado de https://arbolabc.com</li>
-                <li>Ministerio de Educación Nacional de Colombia. (2012). <em>Recursos Educativos Digitales Abiertos</em>.</li>
-                <li>Pinto, M., Gómez, C., & Fernández, A. (2012). Los recursos educativos electrónicos: perspectivas y herramientas de evaluación.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div class="footer">
-    <p>Portafolio digital - Evaluación de Recursos Educativos Digitales | Concepción Renteria Renteria | Universidad de Santander (UDES) | 2026</p>
-    <p>Área: Matemáticas | Grado: 4° de primaria</p>
-</div>
-
-<script>
-    function showPage(pageId) {
-        document.querySelectorAll('.page').forEach(page => {
-            page.classList.remove('active-page');
-        });
-        document.getElementById(pageId).classList.add('active-page');
-        
-        document.querySelectorAll('.nav a, .dropdown-content a').forEach(link => {
-            link.classList.remove('active');
-            if(link.getAttribute('data-page') === pageId) {
-                link.classList.add('active');
-            }
-        });
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    document.querySelectorAll('[data-page]').forEach(el => {
-        el.addEventListener('click', function(e) {
-            e.preventDefault();
-            showPage(this.getAttribute('data-page'));
-        });
-    });
-</script>
-</body>
-</html>
+                    <tr><td><strong>11. Viabilidad en baja conectividad</strong></td><td>4</td><td>4</td></tr>
+                    <tr><td><strong>Total /55</strong></td><td><strong>49</strong></td><td><strong>49</strong></td></
